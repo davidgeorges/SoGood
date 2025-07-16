@@ -1,0 +1,6 @@
+sogood-ia/data.csv
+venv/
+sogood-front/node_modules/
+sogood-front/dist/
+sogood-front/build/
+sogood-front/package-lock.json
