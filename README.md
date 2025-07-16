@@ -44,19 +44,7 @@ git clone https://github.com/davidgeorges/SoGood
 cd sogood-front
 ```
 
----
-
-### 2. **Installer Node.js et npm (ou pnpm)**
-- [Télécharge la version LTS de Node.js](https://nodejs.org/en/download/)
-- Vérifie l’installation :
-  ```bash
-  node -v
-  npm -v
-  ```
-
----
-
-### 3. **Installer les dépendances front**
+### 2. **Installer les dépendances front**
 
 ```bash
 npm install
@@ -68,7 +56,7 @@ pnpm install
 
 ---
 
-### 5. **Lancer le front en local**
+### 3. **Lancer le front en local**
 
 ```bash
 npm run dev
@@ -81,7 +69,13 @@ npm run dev
 
 ### **Installer l’environnement IA pour reproduire les notebooks**
 
-#### a. **Créer un venv Python**
+#### a. **Aller dans le répertoire sogood-ia**
+```bash
+cd ..
+cd sogood-ia
+```
+
+#### b. **Créer un venv Python**
 ```bash
 python -m venv .venv
 # Windows :
@@ -90,12 +84,35 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-#### b. **Installer les packages Python**
+#### c. **Installer les packages Python**
 ```bash
 pip install -r requirements.txt
 ```
 
-- Ouvre le notebook d’analyse pour explorer et exécuter les cellules (prétraitement, visualisations, modèles…).
+#### d. **Lancer l'api FLASK (IA)**
+```bash
+python .\api.py
+```
+
+## 🧪 Environnement Backend (ExpressJS)
+
+### **Installer l’environnement backend**
+
+#### a. **Aller dans le répertoire sogood-back**
+```bash
+cd ..
+cd sogood-back
+```
+
+#### a. **Installer les packages Javascript**
+```bash
+npm install
+```
+
+#### c. **Lancer le backend**
+```bash
+npm run dev
+```
 
 ---
 

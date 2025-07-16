@@ -4,3 +4,5 @@ sogood-front/node_modules/
 sogood-front/dist/
 sogood-front/build/
 sogood-front/package-lock.json
+sogood-back/node_modules/
+sogood-back/package-lock.json
